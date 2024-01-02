@@ -7,6 +7,7 @@ document.getElementById('btn-submit').addEventListener('click', function(){
   console.log(pass);
   if(email === 'sandy.mitra488@gmail.com' && pass === 'secret$77'){
     console.log('Valid user')
+    window.location.href = 'bank.html';
   }else{
     console.log('Invalid user')
     }
