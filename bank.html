@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,11 +9,64 @@
   <title>Moooooney</title>
 </head>
 <body>
-  <header>
-    <h1 class="text-3xl text-center mt-6 mb-6">Wellcome to your <span class="text-orange-500 font-semibold">Bap Er
-        Bank</span></h1>
+<header>
+    <h1 class="text-3xl text-center mt-6 mb-6">Let's get some <span class="text-violet-500 font-semibold">Moooooney!!</span></h1>
   </header>
-
-  <script src="script.js"></script>
+    <main>
+        <section class="mt-12">
+            
+            <div class="grid grid-cols-3 gap gap-3 w-9/12 mx-auto">
+                
+                <div class="bg-blue-400 p-6 text-center text-white rounded-xl">
+                    <h4 class="text-2xl">Deposit</h4>
+                    <h2 class="text-5xl">$<span id="deposit-total">00</span></h2>
+                    
+                </div>
+                
+                <div class="bg-green-400 p-6 text-center text-white rounded-xl">
+                    <h4 class="text-2xl">Withdraw</h4>
+                    <h2 class="text-5xl">$<span id="withdraw-total">00</span></h2>                                
+                </div>
+                
+                <div class="bg-amber-400 p-6 text-center text-white rounded-xl">
+                    <h4 class="text-2xl">Balance</h4>
+                    <h2 class="text-5xl">$<span id="balance-total">00</span></h2>
+                </div>  
+                
+            </div>
+            
+        </section>
+        
+        <!-- Deposit and withdraw-->
+        
+        <section class="mt-12">
+            
+            <div class="grid grid-cols-2 gap gap-2 w-9/12 mx-auto">
+                <div class="bg-purple-400 p-6 text-left rounded-xl">
+                    
+                    <h4 class="text-2xl mb-2 text-white">Please Deposit</h4>                   
+                    <input class="w-9/12 block mb-4 px-2" type="text" name="" id="deposit-field"                      placeholder="$ Amount you want to deposit">
+                    <h2 class="text-5xl text-white">$000</h2>
+                    
+                    <button id="btn-deposit"
+          class="bg-sky-500 hover:bg-sky-700 block mt-2 px-4 py-1 text-white font-medium rounded-e-lg">Deposit</button>
+                </div>
+                
+                
+                <div class="bg-cyan-400 p-6 text-left rounded-xl"> 
+                    
+                    <h4 class="text-2xl mb-2 text-white">Plese Withdraw</h4>
+                    <input class="w-9/12 block mb-4 px-2" type="text" name="" id="withdraw-field"                      placeholder="$ Amount you want to withdraw">
+                    <h2 class="text-5xl text-white">$000</h2>
+                    
+                    <button id="btn-withdraw"
+          class="bg-sky-500 hover:bg-sky-700 block mt-2 px-4 py-1 text-white font-medium rounded-e-                     lg">Withdraw</button>
+                    
+                </div>
+                
+            </div>
+        </section>
+    </main>
+    <script src="deposit.js"></script>
 </body>
 </html>
